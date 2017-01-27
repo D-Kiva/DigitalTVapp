@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/digital_tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.souka.digitaltvapp.activity.ParameterActivity">
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_top"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/text_white"
+            android:text="@string/tab_top_h264"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="Button"/>
+        <Button
+            android:id="@+id/h264Ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="确定"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parameter_bottom"
+        android:background="@color/bg_gray"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/enable_button"
+            android:text="默认设置"
+            android:textSize="20dp"
+            android:textColor="@color/text_white"
+            android:background="@color/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/parameter_bottom"
+        android:layout_below="@+id/ly_top_bar">
+        <ListView
+            android:id="@+id/listView_dialog"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone"
+            android:divider="@color/bg_gray"
+            android:background="@color/bg_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+        </ListView>
+    </FrameLayout>
+</RelativeLayout>

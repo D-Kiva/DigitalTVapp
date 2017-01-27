@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_topbar">#FCFCFC</color>
+    <color name="bg_gray">#8b8b8b</color>
+    <color name="bg_top">#6563a3</color>
+    <color name="bg_bar">#28384c</color>
+    <color name="bg_button">#334a8d</color>
+
+    <color name="gary_line">#E6E6E6</color>
+
+
+    <color name="text_gray">#8D7A71</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#080808</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#694E42</color>
+    <color name="div_white">#E5E5E5</color>
+
+
+    <color name="hl_gray1">#6D7275</color>
+    <color name="hl_gray2">#B0B0B0</color>
+    <color name="hl_gray3">#C5C5C7</color>
+    <color name="hl_gray4">#707173</color>
+    <color name="hl_gray5">#9E9EA0</color>
+    <color name="hl_gray6">#CCCCCC</color>
+    <color name="hl_gray7">#EAEAEB</color>
+    <color name="hl_gray8">#ECECEC</color>
+    <color name="hl_gray9">#F2F2F2</color>
+    <color name="hl_gray10">#eff2f4</color>
+
+    <color name="devide_line">#97999b</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+</resources>

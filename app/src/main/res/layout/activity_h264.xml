@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_h264"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.souka.digitaltvapp.activity.H264Activity">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_top"
+        android:layout_alignParentLeft="true">
+
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/text_white"
+            android:text="@string/tab_top_h264"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="Button"/>
+        <Button
+            android:id="@+id/h264Ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="确定"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_top_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rl_list_bg_mid">
+
+        <RelativeLayout
+            style="@style/myRelativeLayoutmid"
+            android:id="@+id/h264NormalMode"
+            >
+
+            <TextView
+                style="@style/mytextmore"
+                android:text="Normal Mode(1-100)"/>
+
+            <TextView
+                style="@style/mytextmore"
+                android:id="@+id/h264NormalModeInfo"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/hl_gray6"
+                android:text="7x24小时专人看护"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line"
+            />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264MovieMode"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="Movie Mode(1-100)"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264MovieModeInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264PictureMode"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="Picture Mode(1-100)"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264PictureModeInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264Gop"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="GOP(1-60)"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264GopInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264Delay"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="Delay(ms)"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264DelayInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264QuantContrlMax"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="QuantContrl Max(1-51)"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264QuantContrlMaxInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264QuantContrlMin"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="QuantContrl Min(1-51)"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264QuantContrlMinInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264FixedBitrate"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="Fixed Bitrate"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/h264FixedBitrateInfo"-->
+                    <!--style="@style/mytextmore"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:paddingRight="15dp"-->
+                    <!--android:text="7x24小时专人看护"-->
+                    <!--android:textColor="@color/hl_gray6"-->
+                    <!--android:textSize="12sp"/>-->
+                <ToggleButton
+                    android:id="@+id/h264BitrateStat_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="10dp"
+                    android:checked="true"
+                    android:textOff="@null"
+                    android:textOn="@null"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264BitrateMax"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="Bitrate Max"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264BitrateMaxInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264BitrateM"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="Bitrate Min"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264BitrateMinInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+            <RelativeLayout
+                style="@style/myRelativeLayoutmid"
+                android:id="@+id/h264Bitrate"
+                >
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:text="Bitrate"/>
+
+                <TextView
+                    style="@style/mytextmore"
+                    android:id="@+id/h264BitrateInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/hl_gray6"
+                    android:text="7x24小时专人看护"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line"
+                />
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

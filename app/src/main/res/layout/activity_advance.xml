@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.souka.digitaltvapp.activity.AdvanceActivity">
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_top"
+        android:layout_alignParentLeft="true">
+
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/text_white"
+            android:text="@string/tab_top_advance"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="Button"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ly_top_bar">
+
+            <LinearLayout
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rl_list_bg_mid">
+
+                <RelativeLayout
+                    style="@style/myRelativeLayoutmid"
+                    android:id="@+id/adMpegTs"
+                    >
+
+                    <TextView
+                        style="@style/mytextmore"
+                        android:text="MPEG TS"/>
+
+                    <ImageView
+                        style="@style/imagefrontcheckbox"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/devide_line"
+                    />
+                <RelativeLayout
+                    style="@style/myRelativeLayoutmid"
+                    android:id="@+id/adEncoder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_gray"
+                    >
+
+                    <TextView
+                        style="@style/mytextmore"
+                        android:text="Encoder"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/devide_line"
+                    />
+                <RelativeLayout
+                    style="@style/myRelativeLayoutmid"
+                    android:id="@+id/adMpeg2"
+                    >
+
+                    <TextView
+                        style="@style/mytextmore"
+                        android:text="MPEG2"/>
+
+                    <ImageView
+                        style="@style/imagefrontcheckbox"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/devide_line"/>
+                <RelativeLayout
+                    style="@style/myRelativeLayoutmid"
+                    android:id="@+id/adH264"
+                    >
+
+                    <TextView
+                        style="@style/mytextmore"
+                        android:text="H264"/>
+
+                    <ImageView
+                        style="@style/imagefrontcheckbox"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/devide_line"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+</RelativeLayout>
